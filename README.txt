@@ -1,6 +1,6 @@
 Author: Nguyen Tran, nguyent_92@wpi.edu
 Language: Python 2.5, 2.6, 2.7
-OS: Ubuntu
+Operating System: Ubuntu
 
 
 
@@ -17,8 +17,8 @@ SMTPCONF [Bash script]: Without having to edit the root files multiple times, it
 
 --- MANUALS ---
 SMTP-SOURCE manual	: http://www.postfix.org/smtp-source.1.html
-STMP-SAUCE manual 	: smtpadd/docs/Manual_smtp-sauce.txt
-SMTPCONF manual		: smtpadd/docs/manual_smtpcof.txt
+STMP-SAUCE manual 	: ./docs/Manual_smtp-sauce.txt
+SMTPCONF manual		: ./docs/manual_smtpcof.txt
 
 
 
@@ -39,7 +39,7 @@ The SMTP-SAUCE 's syntax is similar to SMTP-SOURCE
 
 - When testing without attachments, it is recommended to use SMTP-SOURCE since it is faster than SMTP-SAUCE.
 - SMTP-SAUCE should be use only when testing with attachments.
-(see ./smtpadd/docs/comparison_chart.doc for more speed test information)
+(see ./docs/comparison_chart.doc for more speed test information)
 
 - You need to install SMTP-SAUCE to run SMTPCONF
 - You can move SMTPCONF anywhere without harming any other files.
