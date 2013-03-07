@@ -1,0 +1,11 @@
+From: <Send@example.com>
+To: Receive@example.com, a@a.com
+Date: 01/01/0101 6:00 AM
+Cc: e@a.com
+Message-Id: <1234>
+Subject: Subject goes here.
+
+
+Body goes here
+
+

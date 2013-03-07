@@ -1,0 +1,28 @@
+----- DESCRIPTION -----	
+- Takes in a username, password, and a list of smtp-sauce arguments 
+- The program logs in to the provided DynECT Email Delivery account, and send emails using smtp-sauce.
+- You can move SMTPCONF anywhere without harming any other files.
+
+
+----- RUN -----	 
+In terminal:
+
+- If SMTP-SAUCE is not installed, install it by run file /smtpadd/install
+$ ./install
+
+- Now you can run smtpconf
+$ ./smtpconf username password smtpsauce-syntax-goes-here
+
+
+---- EXAMPLES ----
+$ ./smtpconf john mypasswd -f john@dyn.com -t smith@dyn.com -m 10 localhost:25
+
+The command line above is similar to:
+- Log in to "john" account on DynECT Email Delivery
+- Use smtp-sauce to send emails through that account
+
+
+
+
+
+

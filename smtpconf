@@ -1,0 +1,25 @@
+#! /bin/bash
+
+USER=$1
+PASSWD=$2
+
+## Update Login Information##
+#Update login
+sudo echo smtp.dynect.net $USER:$PASSWD > /tmp/sasl_passwd
+sudo mv /tmp/sasl_passwd /etc/postfix/sasl_passwd
+
+#Regenerate password file
+sudo chown root:root /etc/postfix/sasl_passwd && sudo chmod 600 /etc/postfix/sasl_passwd
+sudo postmap hash:/etc/postfix/sasl_passwd
+
+#Reload postfix
+sudo postfix reload
+
+
+## Call smtp-sauce
+shift 2
+ARG=$@
+if [ "$ARG" != "" ]; then
+	smtp-sauce $ARG
+fi
+

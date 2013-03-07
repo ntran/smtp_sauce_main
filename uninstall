@@ -1,0 +1,7 @@
+#! /bin/bash
+
+## Uninstall smtp-sauce ##
+sudo rm /usr/sbin/smtp-sauce
+sudo rm -r /usr/lib/smtp_sauce
+## Delete man page ##
+sudo rm /usr/share/man/man1/smtp-sauce.1.gz

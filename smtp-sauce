@@ -1,0 +1,7 @@
+#! /bin/bash
+inputcall=$@
+
+_file="/usr/lib/smtp_sauce/_smtpsauce.py"
+
+python $_file $inputcall
+

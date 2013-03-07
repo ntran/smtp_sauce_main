@@ -1,0 +1,18 @@
+#! /bin/bash
+
+## Install smtp-sauce ##
+BASEDIR=$(dirname $0)
+SMTPSAUCE=$BASEDIR"/smtp-sauce"
+smtpsauce=$BASEDIR"/smtp_sauce"
+MAN=$BASEDIR"/docs/smtp-sauce.1.gz"
+
+sudo cp $SMTPSAUCE /usr/sbin/
+sudo cp -R $smtpsauce /usr/lib/
+
+## Install man page ##
+
+sudo cp $MAN /usr/share/man/man1/
+
+sudo chmod ugo+rx /usr/sbin/smtp-sauce
+sudo chmod ugo+rx /usr/lib/smtp_sauce
+
